@@ -1,68 +1,35 @@
-﻿# Sistema de Soluciones Digitales
+﻿# ðŸ“š Sistema de Soluciones Digitales
 
-Sistema de una editorial digital que manage libros, revistas y articulos de investigacion.
+Sistema de una editorial digital que gestiona libros, revistas y artÃ­culos de investigaciÃ³n.
 
-## Detalle
+## ðŸ“‹ CaracterÃ­sticas
 
-| | |
-|---|---|
-| Tipo | Consola (MVC) |
-| Archivos Java | 17 |
-| Version de Java | 21 |
-| Patron | Arquitectura MVC con patron DAO y una implementacion por tipo de publicacion |
+- GestiÃ³n de publicaciones digitales (libros, revistas, artÃ­culos)
+- Diferentes tipos de publicaciones con atributos especÃ­ficos
+- Persistencia de datos mediante DAO y DTO
+- DataMapper para mapeo de objetos
+- Interfaz por consola
+- Arquitectura MVC
 
-## Funcionalidades
+## ðŸ› ï¸ TecnologÃ­as
 
-- CRUD de libros, revistas y articulos
-- Historial de ventas
-- Persistencia DAO por tipo de publicacion
-- DataMapper entidad-DTO
-- Reportes de inventario
+- Java
+- Maven
+- PatrÃ³n MVC / DAO / DTO
 
-## Estructura del proyecto
-
-```
-solucionesDigitales/
-|-- pom.xml       configuracion de Maven, importable desde cualquier IDE
-|-- src/          codigo fuente
-`-- README.md
-```
-
-## Como ejecutarlo
-
-### Con Maven
+## ðŸš€ CÃ³mo ejecutar
 
 ```bash
+git clone https://github.com/P2X4A/solucionesDigitales.git
+cd solucionesDigitales
 mvn clean compile
-mvn exec:java
+mvn exec:java -Dexec.mainClass="AplMain"
 ```
 
-### Con javac directamente
+## ðŸ‘¨â€ðŸ’» Autor
 
-```bash
-# Linux / macOS
-javac -d bin $(find src -name "*.java")
+Sergio Parra
 
-# Windows (PowerShell)
-javac -d bin (Get-ChildItem -Recurse -Filter *.java src).FullName
-```
+---
 
-```bash
-java -cp bin co.edu.unbosque.controller.AplMain
-```
-
-### Desde un IDE
-
-Cualquier IDE con soporte de Java (Eclipse, IntelliJ IDEA, VS Code o NetBeans)
-puede importar el proyecto directamente como **proyecto Maven**. Basta con abrir
-o importar la carpeta: el IDE detecta el `pom.xml`, resuelve las dependencias y
-compila sin configuracion adicional.
-
-## Autor
-
-Desarrollado por [Sergio Parra](https://github.com/P2X4A) como parte de su
-formacion en Java.
-
-## Licencia
-
-Ver el archivo [LICENSE](LICENSE).
+*Proyecto acadÃ©mico para portafolio.*
